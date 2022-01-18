@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2757124 */
+  src: url('//at.alicdn.com/t/font_2757124_zxq61bkrltg.woff2?t=1629461943836') format('woff2'), url('//at.alicdn.com/t/font_2757124_zxq61bkrltg.woff?t=1629461943836') format('woff'), url('//at.alicdn.com/t/font_2757124_zxq61bkrltg.ttf?t=1629461943836') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-weibo:before {
+  content: "\e60e";
+}
+.icon-weixin:before {
+  content: "\e603";
+}
+.icon-shoujiapp:before {
+  content: "\e625";
+}
+.icon-shouhou:before {
+  content: "\e600";
+}
+.icon-kefu1:before {
+  content: "\e601";
+}
+.icon-gerenzhongxin-zhong-copy:before {
+  content: "\e602";
+}
+.icon-huidingbu:before {
+  content: "\e635";
+}
+.icon-baozhang:before {
+  content: "\e682";
+}
+.icon-you-copy:before {
+  content: "\e6d1";
+}
+.icon-zuo:before {
+  content: "\e614";
+}
+.icon-search:before {
+  content: "\e6d0";
+}
+.icon-cart:before {
+  content: "\e63a";
+}
