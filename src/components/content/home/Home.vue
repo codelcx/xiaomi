@@ -20,6 +20,7 @@ import topNav from "content/navBar/topNav";
 import bottomNav from "content/navBar/bottomNav";
 import fixedNav from "content/navBar/fixedNav";
 import Fot from "content/navBar/footer";
+import Swp from "content/navBar/homeSwiper";
 export default {
   name: "Home",
   components: {
@@ -29,7 +30,8 @@ export default {
     bottomNav,
     Content,
     fixedNav,
-    Fot
+    Fot,
+    Swp,
   },
 };
 </script>

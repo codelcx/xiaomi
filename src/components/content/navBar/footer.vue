@@ -199,7 +199,6 @@
 <script>
 import "assets/css/iconfont.css";
 export default {
-  name: "footer",
 };
 </script>
 

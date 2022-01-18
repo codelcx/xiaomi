@@ -2,22 +2,7 @@
   <div class="home-hero">
     <div class="container">
       <!-- 轮播图 -->
-      <ul class="home-swiper">
-        <li>
-          <img src="~assets/img/swiper1.png" alt="" />
-        </li>
-        <li>
-            <img src="~assets/img/swiper2.png" alt="" />
-          </li>
-      </ul>
-      <!-- 左按钮 -->
-      <a href="#" class="lfbtn iconfont icon-zuo"></a>
-      <a href="#" class="rgbtn iconfont icon-you-copy"></a>
-      <!-- 小圆点 -->
-      <div class="focuList">
-        <a href="#"></a>
-        <a href="#"></a>
-      </div>
+      <home-swiper class="sw"></home-swiper>
       <!-- 右侧tab栏 -->
       <div class="header-tab">
         <div class="item">
@@ -41,10 +26,13 @@
 </template>
 
 <script>
-import "assets/css/iconfont.css";
-import 'assets/js/swiper'
+import homeSwiper from "@/components/content/navBar/homeSwiper";
+import "assets/js/swiper";
 export default {
   name: "homeHero",
+  components: {
+    homeSwiper,
+  },
 };
 </script>
 
@@ -52,70 +40,17 @@ export default {
 .home-hero {
   position: absolute;
   z-index: -3;
-  top:140px;
+  top: 140px;
   width: 1200px;
   height: 450px;
   overflow: hidden;
 
   .container {
-    position: absolute;
-    .home-swiper {
-      ul {
-        li {
-          position: absolute;
-          img {
-            width: 1200px;
-            height: 100%;
-          }
-        }
-      }
-    }
-
-    .lfbtn,
-    .rgbtn {
-      text-align: center;
-      line-height: 50px;
-      width: 30px;
-      height: 50px;
-    }
-
-    .lfbtn:hover,
-    .rgbtn:hover {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    .lfbtn {
+    .sw{
       position: absolute;
-      left: 200px;
-      top: 50%;
-      transform: translateY(-50%);
+      left:200px;
+      width: 1000px;
     }
-
-    .rgbtn {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .focuList {
-      position: absolute;
-      right: 50px;
-      bottom: 22px;
-      line-height: 20px;
-      text-align: center;
-
-      a {
-        margin: 0 5px;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #fff;
-      }
-    }
-
     // tab栏
     .header-tab {
       position: absolute;
